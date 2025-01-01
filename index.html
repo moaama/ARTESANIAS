@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Artesanías</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tienda de Artesanías</h1>
+    <p>Compra joyería artesanal única y personalizada</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#carrito">Carrito</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="productos">
+      <h2>Nuestros Productos</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="images/brazalete.jpg" alt="Brazalete artesanal">
+          <h3>Brazalete</h3>
+          <p>$20.00 USD</p>
+          <button class="btn-agregar" data-nombre="Brazalete" data-precio="20">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="images/aretes.jpg" alt="Aretes artesanales">
+          <h3>Aretes</h3>
+          <p>$15.00 USD</p>
+          <button class="btn-agregar" data-nombre="Aretes" data-precio="15">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="images/anillo.jpg" alt="Anillo artesanal">
+          <h3>Anillo</h3>
+          <p>$25.00 USD</p>
+          <button class="btn-agregar" data-nombre="Anillo" data-precio="25">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="images/pulsera.jpg" alt="Pulsera artesanal">
+          <h3>Pulsera</h3>
+          <p>$18.00 USD</p>
+          <button class="btn-agregar" data-nombre="Pulsera" data-precio="18">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+    <section id="carrito">
+      <h2>Carrito de Compras</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Total</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody id="carrito-contenido">
+        </tbody>
+      </table>
+      <div id="carrito-total">
+        <h3>Total: $<span id="total-carrito">0.00</span> USD</h3>
+      </div>
+      <button id="vaciar-carrito">Vaciar Carrito</button>
+      <button id="procesar-compra">Procesar Compra</button>
+      <div id="paypal-button-container"></div>
+      <button id="stripe-checkout">Pagar con Stripe</button>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Tienda de Artesanías. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
